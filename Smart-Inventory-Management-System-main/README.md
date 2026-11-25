@@ -6,7 +6,8 @@
 
 ## Lecturer & Supervisor
 
-**Eng. Ahmed Gamil**  
+**Eng. Mohamed Atef**
+**Eng. Haytham Awadallah**    
 *DevOps Track Instructor*
 
 ---
