@@ -16,12 +16,12 @@
 
 | Name | Role | Primary Responsibilities |
 |------|------|-------------------------|
-| **Ahmed Walid Hassan Abdelnaby** | DevOps Lead / Project Manager | Overall project coordination, architecture decisions, CI/CD strategy, team leadership |
-| **Ahmed Yasser AbdEl-Hamid** | Containerization & Orchestration Lead | Docker containerization, Kubernetes deployment, pod management, service mesh, container registry |
-| **Galal Elden Osama Sardina** | Infrastructure as Code (IaC) Engineer | Terraform scripts for AWS provisioning, infrastructure management, VPC configuration, resource optimization |
-| **SaifEldin Salah Mohamed Othman** | Configuration Management & Automation | Ansible playbooks, server configuration, environment setup automation, package management |
-| **Moataz Mohammed Khaled** | Monitoring & Observability Engineer | Prometheus metrics, Grafana dashboards, logging (ELK/EFK), alerting rules, system health tracking |
-| **Mustafa Elsayed Atta** | Application Development & Integration | Microservices development, API creation, database setup, application deployment, service integration |
+| **Ahmed Mohamed Emam** | DevOps Lead / Project Manager | Overall project coordination, architecture decisions, CI/CD strategy, team leadership |
+| **Elwany** | Containerization & Orchestration Lead | Docker containerization, Kubernetes deployment, pod management, service mesh, container registry |
+| **Amr Gamal** | Infrastructure as Code (IaC) Engineer | Terraform scripts for AWS provisioning, infrastructure management, VPC configuration, resource optimization |
+| **Ibrahim** | Configuration Management & Automation | Ansible playbooks, server configuration, environment setup automation, package management |
+| **Mostafa** | Monitoring & Observability Engineer | Prometheus metrics, Grafana dashboards, logging (ELK/EFK), alerting rules, system health tracking |
+| **Mohamed Saad** | Application Development & Integration | Microservices development, API creation, database setup, application deployment, service integration |
 
 ---
 
