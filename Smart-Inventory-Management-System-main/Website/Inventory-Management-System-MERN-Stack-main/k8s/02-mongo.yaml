@@ -2,8 +2,9 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mongo-pvc
-  namespace: inventory-management
+  namespace: smart-inventory
 spec:
+  storageClassName: smart-inventory-storage
   accessModes:
     - ReadWriteOnce
   resources:
@@ -14,7 +15,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongo
-  namespace: inventory-management
+  namespace: smart-inventory
   labels:
     app: mongo
 spec:
@@ -34,6 +35,23 @@ spec:
           image: mongo:7
           ports:
             - containerPort: 27017
+          readinessProbe:
+            tcpSocket:
+              port: 27017
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: 27017
+            initialDelaySeconds: 20
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
           volumeMounts:
             - name: mongo-data
               mountPath: /data/db
@@ -46,7 +64,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongo
-  namespace: inventory-management
+  namespace: smart-inventory
 spec:
   selector:
     app: mongo

@@ -2,9 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ims-ingress
-  namespace: inventory-management
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  namespace: smart-inventory
 spec:
   ingressClassName: nginx
   rules:
